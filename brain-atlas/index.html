@@ -1,82 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <!-- Primary SEO -->
-  <title>Brain Project - The Most Detailed Interactive 3D Brain</title>
-  <meta name="description" content="The most detailed interactive 3D brain available to date - and it keeps growing. Spin, search and peel it apart in your browser: cortex, deep grey nuclei, white-matter tracts, ventricles, brainstem, cerebellum, the circle of Willis, dural sinuses and cranial nerves, each labelled with its anatomical path. Free and open, built to make neuroanatomy easy to learn and explore." />
-  <meta name="keywords" content="3D brain, brain project, most detailed 3D brain, brain anatomy, interactive brain model, neuroanatomy, neuroscience, brain map, white matter tracts, cortex, gyri, sulci, basal ganglia, thalamus, ventricles, circle of Willis, cranial nerves, brainstem, cerebellum, learn neuroanatomy" />
-  <meta name="author" content="Itay Inbar" />
-  <meta name="robots" content="index, follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Cerebro 54 — Estudio</title>
+  <meta name="description" content="Cerebro 54 — Estudio: práctica interactiva sobre el modelo anatómico 3D de Brain Project." />
   <meta name="theme-color" content="#0c1018" />
-  <link rel="canonical" href="https://itayinbarr.github.io/brainproject/" />
-
-  <!-- Open Graph (Facebook, LinkedIn, Slack, …) -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Brain Project" />
-  <meta property="og:title" content="Brain Project - The Most Detailed Interactive 3D Brain" />
-  <meta property="og:description" content="The most detailed interactive 3D brain available to date, and constantly growing. Spin, search and peel it apart in your browser - the granularity neuroscientists and students actually need. Free and open." />
-  <meta property="og:url" content="https://itayinbarr.github.io/brainproject/" />
-  <meta property="og:image" content="https://itayinbarr.github.io/brainproject/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="The Brain Project interactive 3D brain on its deep-blue stage, alongside the control panel." />
-
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Brain Project - The Most Detailed Interactive 3D Brain" />
-  <meta name="twitter:description" content="The most detailed interactive 3D brain available to date, and constantly growing. Spin, search and peel it apart in your browser. Free and open." />
-  <meta name="twitter:image" content="https://itayinbarr.github.io/brainproject/og-image.png" />
-
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="apple-touch-icon" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Speed up the third-party model/runtime fetches a touch -->
+  <link rel="stylesheet" href="cerebro54.css" />
   <link rel="preconnect" href="https://unpkg.com" crossorigin />
   <link rel="preconnect" href="https://www.gstatic.com" crossorigin />
-
-  <!-- Structured data: helps search engines understand what this is -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Brain Project",
-    "url": "https://itayinbarr.github.io/brainproject/",
-    "applicationCategory": "EducationalApplication",
-    "operatingSystem": "Any (web browser)",
-    "browserRequirements": "Requires WebGL",
-    "description": "The most detailed interactive 3D brain available to date, and constantly growing. A free, browser-based brain you can spin, search and peel apart, with every structure labelled by its anatomical path - built to make neuroanatomy easy to learn and explore.",
-    "inLanguage": "en",
-    "isAccessibleForFree": true,
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "author": { "@type": "Person", "name": "Itay Inbar", "url": "https://github.com/itayinbarr" },
-    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
-  }
-  </script>
 </head>
 <body>
   <div id="root"></div>
-
-  <!-- Three.js (global build) + GLTF/Draco loaders for the real specimen -->
   <script src="https://unpkg.com/three@0.137.0/build/three.min.js"></script>
   <script src="https://unpkg.com/three@0.137.0/examples/js/loaders/GLTFLoader.js"></script>
   <script src="https://unpkg.com/three@0.137.0/examples/js/loaders/DRACOLoader.js"></script>
-
-  <!-- React + Babel (pinned, production builds) -->
   <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
-
-  <!-- data + scene + analytics (plain JS) -->
   <script src="data.js"></script>
   <script src="systems-data.js"></script>
   <script src="scene.js"></script>
   <script src="firebase-analytics.js"></script>
-
-  <!-- UI (Babel/JSX) -->
   <script type="text/babel" src="tweaks-panel.jsx"></script>
   <script type="text/babel" src="components.jsx"></script>
   <script type="text/babel" src="layers-tree.jsx"></script>
@@ -84,6 +32,7 @@
   <script type="text/babel" src="selection-card.jsx"></script>
   <script type="text/babel" src="narration.jsx"></script>
   <script type="text/babel" src="lessons.jsx"></script>
+  <script type="text/babel" src="cerebro54.jsx"></script>
   <script type="text/babel" src="app.jsx"></script>
 </body>
 </html>
